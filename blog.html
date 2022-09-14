@@ -28,10 +28,10 @@
                     <h5 class="card-title">What are the differences between local storage and session storage?</h5>
                     <p class="card-text">
                         Difference between two types of web storage such as local storage and session storage is given
-                        bellow: <br>
+                        bellow: <br> <br>
                         <strong>Local Storage:</strong> Local storage keeps the data even if the session is over. Data
                         will be retained
-                        if the data is not deleted manually. <br>
+                        if the data is not deleted manually. <br> <br>
                         <strong>Session Storage:</strong> Session storage keeps the data only for the current session.
                         After the session
                         is over it will automatically delete the data.
@@ -44,10 +44,11 @@
                     <h5 class="card-title">What are the differences between global scope and block scope?</h5>
                     <p class="card-text">
                         Scope in javascript is simply the accessibility of variables, functions or objects. There are
-                        two types of scope in javascript as follows: <br>
+                        two types of scope in javascript as follows: <br> <br>
                         <strong>Block Scope: </strong> Variable declared in a curly braces {} is known as block scoped
                         and they can not be
                         accessed outside of this scope. Keywords such as let and const provide this type of scope. <br>
+                        <br>
                         <strong>Global Scope:</strong> Variable declared inside or outside of the curly braces {} with
                         the keyword var is
                         globally scoped. They can be accessed from anywhere in the code.
@@ -70,7 +71,19 @@
             <div class="blog-card">
                 <div>
                     <h5 class="card-title">In how many ways we can get undefined in JavaScript?</h5>
-                    <p class="card-text">Undefined
+                    <p class="card-text">There are several ways we can get undefined. Scenarios that can create
+                        undefined are listed below: <br>
+                        <li class="card-text">Accessing an uninitialized variable will give undefined</li>
+                        <li class="card-text">Function with no return will give undefined if we try to invoke the
+                            function</li>
+                        <li class="card-text">Parameter which is not passed will give an undefined</li>
+                        <li class="card-text">If return has nothing on the right side then it will give us an undefined
+                        </li>
+                        <li class="card-text">Missing property of an object will give an undefined</li>
+                        <li class="card-text">Accessing an element from an array which does not exist will give us
+                            undefined</li>
+                        <li class="card-text">A deleted element of an array will give us undefined</li>
+                        <li class="card-text">Initialize a varible value with undefined will return undefined</li>
                     </p>
                 </div>
             </div>
