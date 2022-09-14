@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body class="body-container">
+    <nav class="navbar">
+        <a href="index.html" class="menu">Home</a>
+        <a href="blog.html" class="menu">Blogs</a>
+    </nav>
+    <section class="blogs">
+        <div class="blogs-heading">
+            <h2>Our Top Blog Posts Of The Day</h2>
+            <p class="blogs-heading-text">Need some information? No worries we have so many questions answered</p>
+        </div>
+        <div class="blog-posts">
+            <div class="blog-card">
+                <div>
+                    <h5 class="card-title">What are the differences between local storage and session storage?</h5>
+                    <p class="card-text">
+                        Difference between two types of web storage such as local storage and session storage is given
+                        bellow: <br>
+                        <strong>Local Storage:</strong> Local storage keeps the data even if the session is over. Data
+                        will be retained
+                        if the data is not deleted manually. <br>
+                        <strong>Session Storage:</strong> Session storage keeps the data only for the current session.
+                        After the session
+                        is over it will automatically delete the data.
+
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div>
+                    <h5 class="card-title">What are the differences between global scope and block scope?</h5>
+                    <p class="card-text">
+                        Scope in javascript is simply the accessibility of variables, functions or objects. There are
+                        two types of scope in javascript as follows: <br>
+                        <strong>Block Scope: </strong> Variable declared in a curly braces {} is known as block scoped
+                        and they can not be
+                        accessed outside of this scope. Keywords such as let and const provide this type of scope. <br>
+                        <strong>Global Scope:</strong> Variable declared inside or outside of the curly braces {} with
+                        the keyword var is
+                        globally scoped. They can be accessed from anywhere in the code.
+
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div>
+                    <h5 class="card-title">What is event loop in JavaScript?</h5>
+                    <p class="card-text">
+                        Javascript is a single threaded and synchronous language. The <strong>event loop</strong> is the
+                        process where it is responsible for JavaScript’s asynchronous programming. Because of this event
+                        loop javascript can handle concurrent work. This event loop is a part of the javascript engine
+                        which is actually responsible for this concurrency. The process of event loop constantly checks
+                        if there is any event in the call stack queue, if there is any then it will be invoked.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div>
+                    <h5 class="card-title">In how many ways we can get undefined in JavaScript?</h5>
+                    <p class="card-text">Undefined
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./history.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

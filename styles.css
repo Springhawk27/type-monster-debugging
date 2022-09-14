@@ -11,8 +11,28 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-.box-container {
+.body-container {
   width: 70%;
+  margin: 0 auto;
+
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+
+.menu {
+  font-size: 24px;
+  text-align: end;
+  color: #9DFFAD;
+  text-decoration: none;
+}
+
+.box-container {
   margin: 0 auto;
 }
 
@@ -182,6 +202,58 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
+}
+
+
+/* style for blogs  */
+
+.blogs-heading {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+  border-bottom: 1px solid #9dffad;
+
+}
+
+.blogs-heading-text {
+  margin-bottom: 10px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+  color: white;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.card-text {
+  font-size: 14px;
+  padding: 5px 0;
 }
 
 @media only screen and (max-width: 1024px) {
