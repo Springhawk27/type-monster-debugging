@@ -22,12 +22,17 @@ fetch("./texts.json")
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
+  // console.log('chracter length', e.key.length)
 
   // Handle backspace press
   if (newLetter == "Backspace") {
     errorCount = errorCount + 1;
     userText = userText.slice(0, userText.length - 1);
-    return display.removeChild(display.lastChild);
+    console.log('size', display.innerText.length)
+    if (display.innerText.length != 0) {
+      return display.removeChild(display.lastChild);
+
+    }
   }
 
   // these are the valid character we are allowing to type
@@ -119,9 +124,12 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      countdownOverlay.innerHTML = '';
+
     }
     count--;
   }, 1000);
+
 };
 
 // START Countdown
@@ -140,8 +148,10 @@ setInterval(() => {
 }, 1000);
 
 
-window.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function (e) {
   if (e.keyCode == 32 && e.target == document.body) {
     e.preventDefault();
   }
 });
+
+
