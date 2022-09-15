@@ -22,13 +22,12 @@ fetch("./texts.json")
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
-  // console.log('chracter length', e.key.length)
 
   // Handle backspace press
   if (newLetter == "Backspace") {
     errorCount = errorCount + 1;
     userText = userText.slice(0, userText.length - 1);
-    console.log('size', display.innerText.length)
+    // console.log('length', display.innerText.length)
     if (display.innerText.length != 0) {
       return display.removeChild(display.lastChild);
 
@@ -153,5 +152,4 @@ document.addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 });
-
 
